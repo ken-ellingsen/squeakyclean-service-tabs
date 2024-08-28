@@ -9,8 +9,9 @@ const Tabs = ({ services }) => { // {services} destructures 'services' from the 
       <div>
         {services.map((service, index) => (
           <h3
-            className="tab-title"
+            className={`tab-title ${index === activeTabIndex && 'active'}`}
             key={index}
+            onClick={() => setActiveTabIndex(index)}
           >
             {service.name}
           </h3>
