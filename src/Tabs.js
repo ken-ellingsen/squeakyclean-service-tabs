@@ -8,7 +8,7 @@ const Tabs = ({ services }) => { // {services} destructures 'services' from the 
     <section className="tabs">
       <div>
         {services.map((service, index) => (
-          <h3 
+          <h3
             className="tab-title"
             key={index}
           >
